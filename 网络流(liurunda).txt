@@ -1,0 +1,52 @@
+最大流
+
+bzoj1066[SCOI2007]蜥蜴 
+bzoj3130[SDOI2013]费用流 
+bzoj1822[JSOI2010]FrozenNova冷冻波 
+poj1336 The K-league 
+bzoj2756[SCOI2012]奇怪的游戏 
+cf498C Array and Operations 
+poj3281 Dining 
+UVA-1574 Surely You Congest 
+bzoj2557[POI2011]Programming Contest 
+cf611H New Year and Forgotten Tree
+
+最小割
+
+bzoj4873[SHOI2017]寿司餐厅 
+bzoj4823[CQOI2017]老C的方块 
+bzoj3232 圈地游戏 
+SPOJ-OPTM optimal marks 
+bzoj3144[HNOI2013]切糕 
+bzoj3996[TJOI2015]线性代数 
+bzoj2561 最小生成树 
+bzoj3158 千钧一发 
+bzoj3774 最优选择 
+bzoj1797[AHOI2009]Mincut最小割
+
+费用流
+
+bzoj4261 建设游乐场 
+bzoj1930[SHOI2003]Pacman吃豆豆 
+bzoj2542[CTSC2001]终极情报网 
+bzoj4514[SDOI2016]数字配对 
+bzoj2668[CQOI2012]交换棋子 
+bzoj2324[ZJOI2011]营救皮卡丘 
+bzoj4276[ONTAK2015]Bajtman i Okr?g?y Robin 
+bzoj3171[TJOI2013]循环格 
+bzoj2597[WC2007]剪刀石头布 
+bzoj4842[Neerc2016]Delight for a Cat 
+bzoj4930 棋盘
+
+上下界
+
+bzoj2502 清理雪道 
+cf704D Captain America 
+poj2396 Budget 
+poj1637 Sight Seeing Tour 
+cf708D Incorrect Flow 
+bzoj3876[AHOI2014]支线剧情 
+bzoj4200[Noi2015]小园丁与老司机 
+bzoj3961[WF2011]Chips Challenge 
+bzoj2406 矩阵 
+bzoj2055 80人环游世界
