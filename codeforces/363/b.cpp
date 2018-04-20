@@ -11,7 +11,7 @@ inline int read(){
 }
 const int N= 2e5+100;
 struct edge{int to,nxt;}e[N<<1];
-int n,m,cnt,a[N],h[N],siz[N],fa[N],dfn[N],low[N],tot,vis[N],root,pcnt;
+int n,m,cnt=1,a[N],h[N],siz[N],fa[N],dfn[N],low[N],tot,vis[N],root,pcnt;
 int belong[N],sz[N],ans,us[N];
 stack<int>s;
 void add(int u,int v){
@@ -22,9 +22,9 @@ void dfs(int x){
 	dfn[x]=low[x]=++tot;
 	s.push(x);vis[x]=1;
 	ez(x){
-		if(e[i].to==fa[x])continue;
+		if(i==(fa[x]^1))continue;
 		if(!dfn[e[i].to]){
-			fa[e[i].to]=x;
+			fa[e[i].to]=i;
 			dfs(e[i].to);
 			low[x]=min(low[x],low[e[i].to]);
 		}
@@ -46,19 +46,19 @@ int main(){
 	rep(i,1,n) {a[i]=read();if(a[i]!=i) add(i,a[i]);else if(!root) root=i;}
 	if(!root){
 		rep(i,1,n) if(!dfn[i]){ dfs(i);}
-		rep(i,1,n) {if(sz[belong[i]]>1){ a[i]=i;ans++;break;}}
+	//	rep(i,1,n) cout<<sz[belong[i]]<<endl;
+		rep(i,1,n) {if(sz[belong[i]]>1&&!us[belong[i]]){if(!root) root=i; a[i]=root;ans++;us[belong[i]]=1;}}
 		cout<<ans<<endl;
 		rep(i,1,n) printf("%d ",a[i]);
 		return 0;
 	}
- 
 	dfs(root);
 	rep(i,1,n) {
 		if(!dfn[i]) {
 			dfs(i);
-			if(sz[belong[i]]>1) ans++,a[i]=root;
 		}
 	}
+	rep(i,1,n) if(sz[belong[i]]>1&&!us[belong[i]]) ans++,a[i]=root,us[belong[i]]=1;
 	rep(i,1,n) if(a[i]==i&&root!=i) a[i]=root,ans++;
 	cout<<ans<<endl;
 	rep(i,1,n) printf("%d ",a[i]);
